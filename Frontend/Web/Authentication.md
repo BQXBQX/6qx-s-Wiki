@@ -2,7 +2,7 @@
 title: Authentication
 description: 
 published: true
-date: 2024-02-17T14:38:48.254Z
+date: 2024-02-17T14:41:56.639Z
 tags: web, authentication, frontend
 editor: markdown
 dateCreated: 2024-02-17T13:44:10.773Z
