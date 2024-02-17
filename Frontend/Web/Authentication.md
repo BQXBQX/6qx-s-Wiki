@@ -2,7 +2,7 @@
 title: Authentication
 description: 
 published: true
-date: 2024-02-17T14:11:30.403Z
+date: 2024-02-17T14:38:48.254Z
 tags: web, authentication, frontend
 editor: markdown
 dateCreated: 2024-02-17T13:44:10.773Z
@@ -151,7 +151,47 @@ JWT 作为一个令牌（token），有些场合可能会放到 URL（比如 [ap
 6. 为了减少盗用，JWT 不应该使用 HTTP 协议明码传输，要使用 HTTPS 协议传输。
 
 ## OAuth2.0
+下图我们以用WX登录掘金为例，详细看一下授权码方式的整体流程。
 
+![bc074292aca448d9a9a1e96f2d335c09~tplv-k3u1fbpfcp-zoom-in-crop-mark_1512_0_0_0.webp](/bc074292aca448d9a9a1e96f2d335c09~tplv-k3u1fbpfcp-zoom-in-crop-mark_1512_0_0_0.webp)
+
+1. 用户选择WX登录掘金，掘金会向WX发起授权请求，接下来 WX 询问用户是否同意授权（常见的弹窗授权）。response_type 为 code 要求返回授权码，scope 参数表示本次授权范围为只读权限，redirect_uri 重定向地址。
+```
+  https://wx.com/oauth/authorize?
+  response_type=code&
+  client_id=CLIENT_ID&
+  redirect_uri=http://juejin.im/callback&
+  scope=read
+```
+2. 用户同意授权后，WX 根据 redirect_uri重定向并带上授权码。
+
+```
+  http://juejin.im/callback?code=AUTHORIZATION_CODE
+```
+3. 当掘金拿到授权码（code）时，带授权码和密匙等参数向WX申请令牌。grant_type表示本次授权为授权码方式 authorization_code ，获取令牌要带上客户端密匙 client_secret，和上一步得到的授权码 code。
+
+```
+  https://wx.com/oauth/token?
+  client_id=CLIENT_ID&
+  client_secret=CLIENT_SECRET&
+  grant_type=authorization_code&
+  code=AUTHORIZATION_CODE&
+  redirect_uri=http://juejin.im/callback
+
+```
+4. 最后 WX 收到请求后向 redirect_uri 地址发送 JSON 数据，其中的access_token 就是令牌。
+```
+  {    
+  "access_token":"ACCESS_TOKEN",
+  "token_type":"bearer",
+  "expires_in":2592000,
+  "refresh_token":"REFRESH_TOKEN",
+  "scope":"read",
+  ......
+  }
+
+```
+总的来说，就是先向服务器请求授权码，再请求令牌，一共请求两次。
 ## References
 
 1. [[浅析]图解前端登录鉴权方案](https://juejin.cn/post/7067531231918817310)
