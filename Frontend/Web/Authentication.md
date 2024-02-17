@@ -2,7 +2,7 @@
 title: Authentication
 description: 
 published: true
-date: 2024-02-17T14:07:58.923Z
+date: 2024-02-17T14:08:18.532Z
 tags: web, authentication, frontend
 editor: markdown
 dateCreated: 2024-02-17T13:44:10.773Z
@@ -152,6 +152,6 @@ JWT 作为一个令牌（token），有些场合可能会放到 URL（比如 [ap
 
 ## References
 
-[[浅析]图解前端登录鉴权方案](https://juejin.cn/post/7067531231918817310)
-[JSON Web Token 入门教程](https://www.ruanyifeng.com/blog/2018/07/json_web_token-tutorial.html)
+1. [[浅析]图解前端登录鉴权方案](https://juejin.cn/post/7067531231918817310)
+2. [JSON Web Token 入门教程](https://www.ruanyifeng.com/blog/2018/07/json_web_token-tutorial.html)
 
