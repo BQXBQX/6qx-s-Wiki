@@ -2,7 +2,7 @@
 title: Authentication
 description: 
 published: true
-date: 2024-02-17T14:08:18.532Z
+date: 2024-02-17T14:11:30.403Z
 tags: web, authentication, frontend
 editor: markdown
 dateCreated: 2024-02-17T13:44:10.773Z
@@ -149,6 +149,8 @@ JWT 作为一个令牌（token），有些场合可能会放到 URL（比如 [ap
 5. JWT 本身包含了认证信息，一旦泄露，任何人都可以获得该令牌的所有权限。为了减少盗用，JWT 的有效期应该设置得比较短。对于一些比较重要的权限，使用时应该再次对用户进行认证。
 
 6. 为了减少盗用，JWT 不应该使用 HTTP 协议明码传输，要使用 HTTPS 协议传输。
+
+## OAuth2.0
 
 ## References
 
