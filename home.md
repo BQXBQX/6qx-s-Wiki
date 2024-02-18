@@ -2,7 +2,7 @@
 title: Welcome
 description: 
 published: true
-date: 2024-02-18T12:47:27.034Z
+date: 2024-02-18T12:47:47.729Z
 tags: welcome
 editor: markdown
 dateCreated: 2024-02-17T13:24:54.854Z
@@ -26,4 +26,4 @@ dateCreated: 2024-02-17T13:24:54.854Z
 
 ## 感谢支持
 
-最后，我要感谢您对我的Wiki的支持和光临,感谢[`Wiki.js`](https://js.wiki)的技术支持。我希望这个Wiki能为您提供有价值的信息，帮助您在前端开发领域不断进步和成长。请随时访问这个Wiki，浏览文章，学习知识，与我一起分享前端开发的激情！🚀
+最后，我要感谢您对我的Wiki的支持和光临，同时也要感谢[`Wiki.js`](https://js.wiki)的技术支持。我希望这个Wiki能为您提供有价值的信息，帮助您在前端开发领域不断进步和成长。请随时访问这个Wiki，浏览文章，学习知识，与我一起分享前端开发的激情！🚀
