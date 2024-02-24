@@ -2,7 +2,7 @@
 title: Untitled Page
 description: 
 published: true
-date: 2024-02-24T08:31:23.976Z
+date: 2024-02-24T08:31:30.648Z
 tags: css, frontend, position
 editor: markdown
 dateCreated: 2024-02-24T08:31:23.976Z
@@ -19,5 +19,6 @@ sticky：对象在常态时遵循常规流。它就像是relative和fixed的合�
 ## 表现形式
 距离页面顶部大于20px，表现为 position:relative;
 ![bv2xut.webp](/public/bv2xut.webp)
+
 距离页面顶部小于20px，表现为 position:fixed;
 ![bv2xu9.webp](/public/bv2xu9.webp)
