@@ -1,8 +1,8 @@
 ---
-title: Untitled Page
+title: Sticky
 description: 
 published: true
-date: 2024-02-24T09:03:16.411Z
+date: 2024-02-24T09:04:18.594Z
 tags: css, frontend, position
 editor: markdown
 dateCreated: 2024-02-24T08:31:23.976Z
