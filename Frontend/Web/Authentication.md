@@ -2,7 +2,7 @@
 title: Authentication
 description: 
 published: true
-date: 2024-02-17T14:48:13.989Z
+date: 2024-02-24T08:23:54.624Z
 tags: web, authentication, frontend
 editor: markdown
 dateCreated: 2024-02-17T13:44:10.773Z
@@ -31,7 +31,7 @@ dateCreated: 2024-02-17T13:44:10.773Z
 1. 占用服务器内存资源，用户量很大时，内容消耗不起。
 2. 正常情况下，`session`在不同的服务器进程中无法共享，比如A 网站和 B 网站是同一家公司的关联服务。现在要求，用户只要在其中一个网站登录，再访问另一个网站就会自动登录。如果要实现，这要求每个进程都能共享`session`（可以通过`session`持久化的方式解决）。
 ## Token认证
-![5090b39b41454a7a88251509559b4436~tplv-k3u1fbpfcp-zoom-in-crop-mark_1512_0_0_0.webp](/5090b39b41454a7a88251509559b4436~tplv-k3u1fbpfcp-zoom-in-crop-mark_1512_0_0_0.webp)
+![5090b39b41454a7a88251509559b4436~tplv-k3u1fbpfcp-zoom-in-crop-mark_1512_0_0_0.webp](/public/5090b39b41454a7a88251509559b4436~tplv-k3u1fbpfcp-zoom-in-crop-mark_1512_0_0_0.webp)
 ### 步骤分解
 1. 浏览器首次登录，服务器收到请求后去数据库校验用户名及密码。
 2. 校验通过后，从数据库查询对应的用户信息。
