@@ -2,7 +2,7 @@
 title: Untitled Page
 description: 
 published: true
-date: 2024-02-24T08:32:42.359Z
+date: 2024-02-24T09:03:16.411Z
 tags: css, frontend, position
 editor: markdown
 dateCreated: 2024-02-24T08:31:23.976Z
@@ -26,9 +26,14 @@ sticky：对象在常态时遵循常规流。它就像是relative和fixed的合�
 ## 生效规则
 1. 须指定 top, right, bottom 或 left 四个阈值其中之一，才可使粘性定位生效。否则其行为与相对定位相同。
 
-2. 并且 top 和 bottom 同时设置时，top 生效的优先级高，left 和 right 同时设置时，left 的优先级高。
+2. 并且 top 和 bottom 同时设置时，top 生效的优先级高，left 和 right 同时设置时，left 的优先级高。（这里我发现bottom和right没有生效，不清楚原因）。
 3. 设定为 position:sticky 元素的任意父节点的 overflow 属性必须是 visible，否则 position:sticky 不会生效。这里需要解释一下：
 
 4. 如果 position:sticky 元素的任意父节点定位设置为 overflow:hidden，则父容器无法进行滚动，所以 position:sticky 元素也不会有滚动然后固定的情况。
 5. 如果 position:sticky 元素的任意父节点定位设置为 position:relative | absolute | fixed，则元素相对父元素进行定位，而不会相对 viewprot 定位。
 5. 达到设定的阀值。这个还算好理解，也就是设定了 position:sticky 的元素表现为 relative 还是 fixed 是根据元素是否达到设定了的阈值决定的。
+
+## [兼容性](https://caniuse.com/)
+
+## reference
+1. https://segmentfault.com/a/1190000013061082
