@@ -2,13 +2,13 @@
 title: Welcome
 description: 
 published: true
-date: 2024-02-26T10:59:02.312Z
+date: 2024-02-26T10:59:12.626Z
 tags: welcome
 editor: markdown
 dateCreated: 2024-02-24T12:14:12.695Z
 ---
 
-# 欢迎来到我的Wik！👨‍💻
+# 欢迎来到我的Wiki！👨‍💻
 
 欢迎访问我的Wiki！这个Wiki是我个人的知识库和博客，记录了我在前端开发领域的学习、经验和见解。我将这个Wiki打造成一个共同的的学习和分享空间，旨在与您共享我的技术心得、项目经验和最新的前端趋势。
 
